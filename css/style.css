@@ -1,0 +1,256 @@
+body {
+  height: 100vh;
+}
+
+/* @media (max-width: 674px)  */
+
+ 
+
+.fa-beat {
+  margin: 15px;
+  padding: 25px;
+  font-size: 45px;
+  cursor: pointer;
+  float: right;
+  
+}
+
+.fa-beat:hover {
+  transition: 0.5s;
+  opacity: 0.6;
+}
+
+.fa-beat:not(:hover) {
+  transition: 0.5s;
+}
+
+
+.logoWebsite {
+  
+  height: 70px;
+}
+
+.fa-x {
+  float: right;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.headerTag {
+  width: 410px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head {
+  width: 0;
+  padding: 20px;
+  height: 100vh;
+}
+
+.headBack { 
+  opacity: 1;
+  transition: 0.5s;
+  padding: 20px;
+  height: 100vh;
+}
+
+.menu {
+  height: 100px;
+  margin-top: 60px;
+
+}
+
+.firstItem, .items  {
+  font-size: 1.8rem;
+  color: #617d98;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  
+}
+
+.firstItem a, .items a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+.items { 
+  font-size: 1.8rem;
+  margin-top: 30px;
+}
+
+.firstItem:hover, .items:hover {
+  background-color: #76a1c9 ;
+  transition: 0.5s;
+  padding-left: 4px;
+  width: 100%;
+  
+}
+
+.firstItem:not(:hover), .items:not(:hover) {
+  transition: 0.5s;
+}
+
+.secondDiv {
+  display: flex;
+}
+
+
+
+
+/* After 500px ---------------------------------------------------------------------------*/ 
+
+@media (min-width: 550px) {
+
+  
+
+  .headerWidth {
+    width: 100px;
+  }
+
+  .fa-beat {
+    float: right;
+    margin: 15px;
+    padding: 25px;
+    font-size: 45px;
+    cursor: pointer;
+  }
+  
+  .fa-beat:hover {
+    transition: 0.5s;
+    opacity: 0.6;
+  }
+  
+  .fa-beat:not(:hover) {
+    transition: 0.5s;
+  }
+  
+  .btnNotClicked {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logoWebsite {
+    height: 70px;
+  }
+  
+  .fa-x {
+    float: right;
+    cursor: pointer;
+    font-size: 35px;
+  }
+  
+  .headerTag {
+    width: 400px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .head {
+    opacity: 0;
+    padding: 20px;
+    height: 100vh;
+    width: 500px;
+  }
+
+  .headBack { 
+    opacity: 1;
+    transition: 0.5s;
+    padding: 20px;
+    height: 100vh;
+
+  }
+  
+  
+  .menu {
+    height: 100px;
+    margin-top: 60px;
+  
+  }
+  
+  .firstItem, .items  {
+    font-size: 1.8rem;
+    color: #617d98;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    width: 400px;
+  }
+  
+  .firstItem a, .items a {
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  
+  .items { 
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+  
+  .firstItem:hover, .items:hover {
+    background-color: #76a1c9 ;
+    transition: 0.5s;
+    padding-left: 4px;
+    
+  }
+  
+  .firstItem:not(:hover), .items:not(:hover) {
+    transition: 0.5s;
+  }
+  
+  #backgroundColor {
+    width: 100%;
+  }
+  
+}
+
+#backgroundColor {
+  width: 440px;
+  background-color: rgb(84, 84, 188);
+   opacity: 0;
+ }
+
+
+
+
+@media (max-width:500px) {
+  #backgroundColor {
+    width: 400px;
+    transition: 0.5s;
+    position: fixed;
+  }
+
+
+}
+
+
+@media   (min-width: 300px) {
+  
+  
+
+  #backgroundColor {
+    width: 300px;
+    transition: 0.5s;
+   
+  }
+
+  .fa-x {
+
+    float: right;
+    position: relative;
+  }
+
+  
+
+
+
+}
+
+.after450px {
+  width: 400px;
+}

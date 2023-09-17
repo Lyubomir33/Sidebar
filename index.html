@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width='device-width', initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Sidebar</title>
+</head>
+
+<body>
+
+  <i id="clickBar" onclick="clickOnBar(), responsiveClickBar()" class="fa-solid fa-bars fa-beat"
+    style="color: #49a6e9;"></i>
+
+
+
+  <div id="backgroundColor">
+
+    <div id="headPart" class="head">
+
+
+      <div class="headerTag">
+
+        <img class="logoWebsite" src="./img/logoWebsite.jpg" alt="">
+        <i onclick="clickX(), responsiveX()" id="xCick" class="fa-solid fa-x" style="color: #ff0000;"></i>
+
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class="firstItem"><a href="#">Home</a></li>
+          <li class="items"><a href="#">About</a></li>
+          <li class="items"><a href="#">Projects</a></li>
+          <li class="items"><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script>
+
+    const headPart = document.getElementById('headPart');
+    const backgroundColor = document.getElementById('backgroundColor');
+    const xClick = document.getElementById('xCick');
+
+
+    function clickOnBar() {
+
+      if (headPart.classList.contains('head')) {
+
+
+        headPart.classList.replace('head', 'headBack');
+        backgroundColor.style.opacity = '1';
+        backgroundColor.style.transition = "0.3s";
+
+        if (window.innerWidth <= 450) {
+          backgroundColor.style.width = '100%';
+          
+        } else if(window.innerWidth > 451) {
+          backgroundColor.style.width = '400px';
+        }
+
+      } else if (headPart.classList.contains('headBack')) {
+        headPart.classList.replace('headBack', 'head');
+        backgroundColor.style.opacity = "0";
+        backgroundColor.style.transition = "0.3s";
+
+
+      }
+
+
+    }
+
+    function responsiveClickBar() {
+
+      responsiveX();
+
+      backgroundColor.style.width = "100%";
+
+
+
+
+    }
+
+    function responsiveX() {
+
+      responsiveClickBar();
+
+      if (xClick) {
+        backgroundColor.style.width = "300px";
+
+      }
+
+
+    }
+
+    function clickX() {
+
+      if (xClick) {
+        backgroundColor.style.opacity = "0";
+        headPart.classList.replace('headBack', 'head');
+        backgroundColor.style.transition = "0.3s";
+        backgroundColor.style.width = "300px";
+      }
+    }
+
+    
+
+  </script>
+
+</html>
